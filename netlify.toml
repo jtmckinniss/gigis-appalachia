@@ -1,0 +1,14 @@
+# Gigi's Appalachia — investor microsite
+[build]
+  publish = "."
+
+# /publications/ (pretty URL) -> publications.html
+[[redirects]]
+  from = "/publications/*"
+  to = "/publications.html"
+  status = 200
+
+[[headers]]
+  for = "/pubs/*"
+  [headers.values]
+    Content-Disposition = "inline"
