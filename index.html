@@ -280,6 +280,26 @@
   .rcase-cap{font-family:var(--mono);font-size:12px;line-height:1.55;color:var(--gray-warm);margin-top:20px;max-width:62ch}
   .rcase-note{font-family:var(--mono);font-size:11px;line-height:1.5;color:var(--gray-warm);opacity:.85;margin-top:12px;max-width:70ch;font-style:italic}
   .rcase-note a{color:var(--teal-deep);text-decoration:underline;text-underline-offset:2px}
+  .missions{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,26px);margin-top:clamp(20px,3vw,30px)}
+  .mi{border:1px solid #D6D1C5;background:#FAF8F2;padding:clamp(18px,2.6vw,26px)}
+  .mi-head{display:flex;align-items:baseline;gap:12px}
+  .mi-k{font-family:var(--mono);font-size:13px;color:var(--teal-deep)}
+  .mi-head h3{font-family:var(--display);font-weight:600;font-size:clamp(19px,2.4vw,24px);letter-spacing:-.008em;color:var(--ink);margin:0}
+  .mi-q{font-family:var(--body);font-size:13.5px;line-height:1.55;color:var(--gray-warm);margin-top:8px}
+  .wk{display:block;border-left:2.5px solid var(--teal-deep);padding:7px 4px 7px 12px;margin-top:12px;text-decoration:none}
+  a.wk:hover{background:rgba(14,128,121,.07)}
+  .wk-tag{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep)}
+  .wk-t{display:block;font-family:var(--body);font-weight:700;font-size:13.5px;line-height:1.45;color:var(--ink);margin-top:3px}
+  .wk-static{border-left-color:#D6D1C5}
+  .pubcta2{display:flex;align-items:center;justify-content:space-between;gap:clamp(18px,3vw,36px);flex-wrap:wrap;margin-top:clamp(28px,4.5vw,44px);padding:clamp(24px,3.8vw,42px);background:#16291F;text-decoration:none}
+  .pc2-body{max-width:62ch}
+  .pc2-ey{font-family:var(--body);font-weight:800;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+  .pc2-h{font-family:var(--display);font-weight:500;font-size:clamp(22px,3.2vw,31px);line-height:1.15;letter-spacing:-.01em;color:var(--cream);margin-top:8px}
+  .pc2-h em{font-style:italic;color:var(--teal)}
+  .pc2-p{font-family:var(--body);font-size:clamp(13px,1.6vw,14.5px);line-height:1.6;color:rgba(244,241,233,.8);margin-top:10px}
+  .pc2-btn{flex-shrink:0;font-family:var(--body);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:var(--teal);color:#0B1512;padding:15px 24px}
+  .pubcta2:hover .pc2-btn{background:var(--cream)}
+  @media(max-width:760px){.missions{grid-template-columns:1fr}}
   .pubcta{display:flex;align-items:center;gap:clamp(14px,2.4vw,22px);margin-top:clamp(26px,4vw,38px);padding:clamp(16px,2.6vw,24px);border:1.5px solid var(--teal-deep);text-decoration:none;color:var(--ink);max-width:720px}
   .pubcta .pc-n{font-family:var(--display);font-weight:600;font-size:clamp(34px,5vw,48px);line-height:1;color:var(--teal-deep)}
   .pubcta .pc-t{font-family:var(--body);font-size:clamp(13px,1.6vw,15px);line-height:1.5}
@@ -847,45 +867,45 @@
       <p class="rcase-note">Gigi’s built this comparison by selecting the leading journals in each field — human medicine (<a href="https://www.nejm.org" target="_blank" rel="noopener">NEJM</a>, <a href="https://jamanetwork.com/journals/jama" target="_blank" rel="noopener">JAMA</a>, <a href="https://www.thelancet.com" target="_blank" rel="noopener">The Lancet</a>, <a href="https://www.bmj.com" target="_blank" rel="noopener">BMJ</a>) and veterinary medicine (<a href="https://avmajournals.avma.org/view/journals/javma/javma-overview.xml" target="_blank" rel="noopener">JAVMA</a>, <a href="https://avmajournals.avma.org/view/journals/ajvr/ajvr-overview.xml" target="_blank" rel="noopener">AJVR</a>, <a href="https://onlinelibrary.wiley.com/journal/19391676" target="_blank" rel="noopener">JVIM</a>). It’s an illustration of the scale of the research gap, not a complete count of every study in either field — and shelter-dog research is a small slice of veterinary medicine’s.</p>
     </div>
 
-    <p class="eyebrow rsub reveal">What we're studying</p>
-    <div class="focus">
-      <div class="item reveal"><div class="k">01</div><div class="nm">Veterinary access in shelter dogs</div></div>
-      <div class="item reveal d1"><div class="k">02</div><div class="nm">Measuring behavior &amp; welfare</div></div>
-      <div class="item reveal d2"><div class="k">03</div><div class="nm">Transport between shelters</div></div>
-      <div class="item reveal d3"><div class="k">04</div><div class="nm">Parvovirus survival in shelters</div></div>
+    <p class="eyebrow rsub reveal">What we're working to solve</p>
+    <div class="missions">
+
+      <div class="mi reveal">
+        <div class="mi-head"><span class="mi-k">01</span><h3>Beating parvovirus</h3></div>
+        <p class="mi-q">The deadliest threat a shelter puppy faces. We're proving it can be beaten — with timing, treatment, and protocol.</p>
+        <a class="wk" href="/publications/"><span class="wk-tag">Peer-reviewed · 2025</span><span class="wk-t">Change when puppies enter the shelter: infections fell from 47% to 9%</span></a>
+        <a class="wk" href="/publications/"><span class="wk-tag">Published abstract · 2025</span><span class="wk-t">New antibody treatment: recovery in half the time</span></a>
+      </div>
+
+      <div class="mi reveal d1">
+        <div class="mi-head"><span class="mi-k">02</span><h3>Understanding how dogs cope</h3></div>
+        <p class="mi-q">You can't help a struggling dog you can't see. We're building the tools — and the evidence — for shelter behavior care.</p>
+        <a class="wk" href="/publications/"><span class="wk-tag">Peer-reviewed · 2026</span><span class="wk-t">L.I.F.E.™, Gigi's own behavior evaluation — validated across 800+ dogs</span></a>
+        <a class="wk" href="/publications/"><span class="wk-tag">Peer-reviewed · 2024</span><span class="wk-t">Gabapentin: 72% of families saw real improvement</span></a>
+        <a class="wk" href="/publications/"><span class="wk-tag">Books · 2020–2024</span><span class="wk-t">Teaching the field — a Wiley veterinary textbook and the ACVB's guide for families</span></a>
+      </div>
+
+      <div class="mi reveal d1">
+        <div class="mi-head"><span class="mi-k">03</span><h3>Making transport easier on the dog</h3></div>
+        <p class="mi-q">Transport saves lives — but the ride is stressful. We're measuring what actually calms dogs in transit.</p>
+        <a class="wk" href="/publications/"><span class="wk-tag">Conference research · 2025</span><span class="wk-t">A calming supplement + our low-stress protocol, tested on real transports</span></a>
+      </div>
+
+      <div class="mi reveal d2">
+        <div class="mi-head"><span class="mi-k">04</span><h3>Widening access to care</h3></div>
+        <p class="mi-q">The question underneath everything: what happens when real care actually reaches shelter dogs? Every study above is part of that answer — and the work continues.</p>
+        <span class="wk wk-static"><span class="wk-tag">Research in progress</span><span class="wk-t">Veterinary access in shelter dogs — Gigi's standing center of focus</span></span>
+      </div>
+
     </div>
 
-    <p class="eyebrow rsub reveal">Published, peer-reviewed work</p>
-    <div class="rcards">
-      <div class="rcard reveal d1">
-        <span class="tag">Peer-reviewed · 2025</span>
-        <h3>Deferred puppy intake &amp; parvovirus survival</h3>
-        <p>Original Gigi's research: a community case study showing how intake timing lowers parvovirus infection and raises survival.</p>
-        <div class="meta">Hadden &amp; Herron · J. Shelter Medicine &amp; Community Animal Health</div>
+    <a class="pubcta2 reveal d2" href="/publications/">
+      <div class="pc2-body">
+        <p class="pc2-ey">The full record</p>
+        <h3 class="pc2-h">Nine published works — <em>and what each one means.</em></h3>
+        <p class="pc2-p">Three peer-reviewed studies, three abstracts &amp; presentations, three books — every one with its result in plain terms, the full citation, and a link to read it yourself.</p>
       </div>
-      <div class="rcard reveal d2">
-        <span class="tag">Peer-reviewed · 2024</span>
-        <h3>Gabapentin for canine behavioral disorders</h3>
-        <p>A retrospective evaluation of treatment outcomes — part of the evidence base behind veterinary-led behavior care.</p>
-        <div class="meta">Kirby-Madden, Waring &amp; Herron · Animals</div>
-      </div>
-  <div class="rcard reveal d3">
-        <span class="tag">Peer-reviewed · 2026</span>
-        <h3>L.I.F.E.™ — Gigi's own behavior evaluation</h3>
-        <p>Original Gigi's research: a validated tool that reads how a dog actually lives in the shelter — not how it reacts to artificial tests — to find the dogs who need help coping.</p>
-        <div class="meta">Herron, Martin &amp; Dowling-Guyer · Animals</div>
-      </div>
-    </div>
-    <p class="eyebrow rsub2 reveal">Conference abstracts</p>
-    <div class="abstracts reveal d1">
-      <div class="ab">Monoclonal-antibody parvovirus treatment</div>
-      <div class="ab">Stress reduction during inter-organizational transport</div>
-    </div>
-
-    <a class="pubcta reveal d2" href="/publications/">
-      <span class="pc-n">9</span>
-      <span class="pc-t">See the full publication record — peer-reviewed studies, abstracts, and books, each with a <em>plain-language summary</em> of what it means.</span>
-      <span class="pc-a">→</span>
+      <span class="pc2-btn">Explore the research →</span>
     </a>
 
   </div>
